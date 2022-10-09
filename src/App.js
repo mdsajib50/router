@@ -4,6 +4,7 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import Shop from './components/Shop/Shop';
 import Main from './layouts/Main/Main';
+import User from './components/User/User';
 
 function App() {
 
@@ -18,6 +19,9 @@ function App() {
         },
         {
           path:'/shop', element: <Shop></Shop>
+        },
+        {
+          path:'/user', element: <User></User>
         }
       ]
     }
