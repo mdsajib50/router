@@ -4,7 +4,8 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import Shop from './components/Shop/Shop';
 import Main from './layouts/Main/Main';
-import User from './components/User/User';
+
+import Users from './components/Users/Users';
 
 function App() {
 
@@ -21,7 +22,11 @@ function App() {
           path:'/shop', element: <Shop></Shop>
         },
         {
-          path:'/user', element: <User></User>
+          path:'/users',
+          loader:()=>{
+           return fetch('https://jsonplaceholder.typicode.com/users')
+          },
+          element: <Users></Users>
         }
       ]
     }

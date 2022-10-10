@@ -4,8 +4,7 @@ import Header from '../../components/Header/Header';
 
 const Main = () => {
     return (
-        <div>
-            <h4>This is main page</h4>
+        <div className='bg-lime-300 md: w-full'>
            <Header></Header> 
            <Outlet></Outlet>
         </div>
